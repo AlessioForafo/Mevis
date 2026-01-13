@@ -40,7 +40,7 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: None
-        Value: {"LocaleId":"en-US","Text":"pluto"}
+        Value: {"NamespaceIndex":7,"TextId":"pluto"}
     - Name: Pair2
       Type: ValueMapPair
       ModellingRule: None
@@ -54,4 +54,4 @@ Children:
         Type: BaseDataVariableType
         DataType: LocalizedText
         ModellingRule: None
-        Value: {"LocaleId":"en-US","Text":"paperino"}
+        Value: {"NamespaceIndex":7,"TextId":"paperino"}

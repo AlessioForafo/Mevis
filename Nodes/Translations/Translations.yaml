@@ -2,6 +2,7 @@ Name: Translations
 Type: TranslationsCategoryFolder
 Children:
 - Name: LocalizationDictionary1
+  Id: g=96aca220d6d05008538813a74cc49d07
   Type: LocalizationDictionary
   DataType: String
   ValueRank: OneOrMoreDimensions
@@ -9,8 +10,79 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [1,2],
+    "Dimensions": [24,3],
     "Body": [
-     "","en-US"
+     "","en-US","it-IT",
+     "RecipesEditorStoreOfSchema","Store of schema","",
+     "Save","Save","",
+     "Delete","Delete","",
+     "Load","Load","",
+     "Apply","Apply","",
+     "RecipeControllerRecipe","Recipe","",
+     "RecipeControllerEmptyRecipeName","Recipe name is empty","",
+     "RecipeControllerCreatedAndSaved","created and saved","",
+     "RecipeControllerDeleted","deleted","",
+     "RecipeControllerRecipeApplied","Recipe applied","",
+     "RecipeControllerRecipeLoaded","Recipe loaded","",
+     "RecipeControllerSaved","saved","",
+     "RecipesEditorNotARecipe","is not a recipe","",
+     "RecipesEditorRecipeSchemaNotFound","RecipeSchema variable not found","",
+     "RecipesEditorRecipeSchemaNotSet","RecipeSchema not set","",
+     "RecipesEditorRecipeNotFound","Recipe not found","",
+     "RecipesEditorNotAStore","is not a store","",
+     "RecipesEditorNotSet","is not set","",
+     "RecipesEditorStore","Store","",
+     "RecipesEditorNotFound","not found","",
+     "RecipesEditorEditModelOfSchema","EditModel of schema","",
+     "paperino","paperino","pap",
+     "pluto","pluto","plu"
     ]
    }
+- Name: ImportAndExportTranslations
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: BehaviourStartPriority
+    Type: BehaviourStartPriorityVariableType
+    DataType: Byte
+    Value: 180
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///C:/Temp/Traduzioni.csv"
+  - Class: Method
+    Name: ExportTranslations
+  - Class: Method
+    Name: ImportTranslations
+  - Name: CharacterSeparator
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ";"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: LocalizationDictionary
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/Mevis/Translations/LocalizationDictionary1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/VariableTypes/BaseVariableType/LocalizationDictionary"
+  - Name: ns=4;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 4
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "e7cab90d0ab7e8b5b02218e38bca9a0e",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }

@@ -280,3 +280,23 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Objects/Mevis/CommDrivers/CODESYSDriver1/CODESYSStation1/Tags/Application/PLC_PRG/arrayMotori/0"
+- Name: MyCustomRect
+  Id: g=8d15bceb28e919f0f799febc50e7d9c6
+  Supertype: Rectangle
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 249.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 129.0
+  - Name: Indice
+    Type: BaseDataVariableType
+    DataType: Int32
+  - Name: CambiaColoreRect
+    Type: NetLogic
