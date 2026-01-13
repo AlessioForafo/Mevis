@@ -1,0 +1,57 @@
+Name: Converters
+Type: ConvertersCategoryFolder
+Children:
+- Name: TestoLabel
+  Id: g=29e4640a754d1c6881807697278844c2
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Source
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ReferenceType: HasSource
+  - Name: ns=2;Pairs
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: None
+        Value: {"LocaleId":"en-US","Text":"ciao"}
+    - Name: Pair1
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 1
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: None
+        Value: {"LocaleId":"en-US","Text":"pluto"}
+    - Name: Pair2
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 2
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: None
+        Value: {"LocaleId":"en-US","Text":"paperino"}
